@@ -1,0 +1,139 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 999;
+    transition: background-color .7s ease-in-out;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#navbar ul li {
+    margin-right: 10px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color .7s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    color: #f00;
+}
+
+section {
+    padding: 50px;
+}
+
+section #artist h2 {
+    display: inline;
+} 
+#banner {
+    background-color: #000;
+    color: #f00;
+}
+
+#artists {
+    background-color: #000;
+    color: #f00;
+}
+
+.artist {
+    margin-bottom: 30px;
+    border: 1px solid #f00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.artist img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#catalog {
+    background-color: #000;
+    color: #f00;
+}
+
+#catalog ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#catalog ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f00;
+    padding-bottom: 5px;
+}
+
+#contact {
+    background-color: #000;
+    color: #f00;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #d50000;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
