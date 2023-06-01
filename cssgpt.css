@@ -8,10 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#banner {
-    margin: 40vh 25em;
-}
-
 .p-estrella {
     color: #ffd700;
 }
@@ -20,18 +16,18 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
+    background-image: url(betiafondo.jpg);
 }
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: #000;
+    width: 100%; 
     color: #fff;
     padding: 10px;
     z-index: 999;
-    transition: background-color .7s ease-in-out;
+    transition: background-color .7s ease-in-out; 
 }
 
 #navbar {
@@ -61,10 +57,8 @@ header {
 }
 
 .img-logo--nav {
-    width: 30px;
-    height: 30px;
-    border: 50%;
-    border-radius: 50%;
+    width: 35px;
+    height: 35px; 
 }
 
 section {
@@ -73,9 +67,17 @@ section {
 
 section #artist h2 {
     display: inline;
-} 
+}  
+
 #banner {
-    background-color: #000;
+    color: #fff;
+    font-size: 30px; 
+    text-align: center;
+    padding-bottom: 80vh; 
+    transition: color .4s ease-in-out;
+}  
+
+#banner :hover {
     color: #f00;
 }
 
@@ -127,8 +129,7 @@ section #artist h2 {
 .contact-form h3 {
     margin-bottom: 10px;
 }
-
-.contact-form form input,
+ 
 
 .contact-form form textarea {
     width: 100%;
@@ -142,6 +143,12 @@ section #artist h2 {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .contact-form form button:hover {
