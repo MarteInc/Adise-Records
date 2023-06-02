@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,6 +35,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    position: sticky;
+    top: 0;
 }
 
 #navbar ul {
@@ -66,7 +69,7 @@ section {
 }
 
 section #artist h2 {
-    display: inline;
+    display: block;
 }  
 
 #banner {
@@ -81,16 +84,35 @@ section #artist h2 {
     color: #f00;
 }
 
+#h2-na { 
+    position: absolute;
+    display: flex;
+    margin-left: 43vw;
+    margin-top: 4vh;
+    color: #f00;
+}
+
+#h2-catalog {
+    position: absolute;
+    display: flex;
+    margin-left: 40vw; 
+    margin-top: -8vh;
+    color: #f00;
+
+}
+
 #artists {
+    display: flex;
     background-color: #000;
     color: #f00;
 }
 
 .artist {
-    margin-bottom: 30px;
+    margin: 30px;
     border: 1px solid #f00;
     padding: 10px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .artist img {
@@ -102,18 +124,26 @@ section #artist h2 {
 
 #catalog {
     background-color: #000;
-    color: #f00;
+    color: #f00; 
 }
 
 #catalog ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0; 
 }
 
 #catalog ul li {
     margin-bottom: 10px;
     border-bottom: 1px solid #f00;
     padding-bottom: 5px;
+}
+
+#catalog ul li a {
+    margin: 100%vw;
+    padding: 30px; 
+    width: 20vw;
+    height: 30px; 
+    text-align: center;
 }
 
 #contact {
@@ -162,15 +192,30 @@ footer {
     text-align: center;
 }
  
-@media screen and (max-width: 650px) {
+#check {
+    display: none;
+}
+ 
+@media screen and (max-width: 700px) {
   /* Estilos específicos para pantallas pequeñas */
+ * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+ }
 
-  .body-container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  #inavbar {
-    background-color: #f00
-  } 
+ nav { 
+    background-color: #f00;
+    height: 80px;
+    width: 100%; 
+ } 
+ .checklbl {
+    font-size: 30px;
+    color: #000;
+    float: right;
+
+ }
+
 }
