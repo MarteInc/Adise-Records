@@ -8,10 +8,14 @@
     <script src="script.js"></script>
     <link rel="shortcut icon" href="adiselogo.png">
 </head>
-<body class="body-container">
+<body class="body-container"> 
     <header>
         <nav id="navbar">
             <ul>
+                <input type="checkbox" id="check"> 
+                <label for="check" class="checklbl">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <li><a href="#" onclick="scrollToSection('banner')">Inicio</a></li>
                 <li><a href="#artists" onclick="scrollToSection('artists')">Artistas</a></li>
                 <li><a href="#catalog" onclick="scrollToSection('catalog')">Catálogo</a></li>
@@ -25,9 +29,9 @@
         <h1 id="h1">Bienvenido a A.D.I.S.E.<b class="p-estrella">&#9734;</b>Records</h1>
         <p id="psec">Descubre la mejor música</p>
     </section>
-
+        <h2 id="h2-na">Nuestros Artistas</h2>
     <section id="artists">
-        <h2>Nuestros Artistas</h2>
+        
         <div class="artist">
             <img src="Alissonabretusalas.jpg" alt="Artista 1">
             <h3>Alisson - Abre Tus Alas</h3>
@@ -48,29 +52,34 @@
             <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
-        </div>
-         <div class="artist">
-            <img src="capibara.jpg" alt="Artista 4" >
-            <h3>Alisson - Tarzo y Lema</h3>
-            <p>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
-        </div>
+        </div> 
         <!-- Agrega más artistas aquí -->
     </section>
 
     <section id="catalog">
-        <h2>Nuestro Catálogo</h2>
+        <h2 id="h2-catalog">Nuestro Catálogo</h2>
         <ul>
-            <li><a href="#">Álbum 1</a></li>
-            <li><a href="#">Álbum 2</a></li>
-            <li><a href="#">Álbum 3</a></li>
-            <li><a href="#">Álbum 4</a></li>
+            <li>Augusto Sestini<a href="https://youtu.be/WN8z8s25nls">Un Niño</a></li> 
+            <li>Cami Islas<a href="https://youtu.be/SYyzHjd6vrQ"></a></li> 
+            <li>Elvis Dixieland<a href="#"></a></li> 
+            <li>Gabriel Leiva Grupo<a href="#"></a></li> 
+            <li>Gabriel Lemos<a href="https://youtu.be/TNJBetZLGZY"></a></li> 
+            <li>Los Nadal
+                <a href="https://youtu.be/fv0mXCCPj5A"></a>
+                <a href="https://youtu.be/gVnW-FPkbto"></a>
+                <a href="https://youtu.be/kH-wNzfIVr0"></a>
+                <a href="https://youtu.be/fhC_K25qjQ4"></a></li> 
+            <li>Luciano Sposari<a href="#"></a></li> 
+            <li>Maru Fedele<a href="#"></a></li>  
+            <li>Nunca Será<a href="https://youtu.be/U6MXxvUap0o"></a></li>
+            <li>P2<a href="https://youtube.com/playlist?list=PLWhMLcSqvsp1OS9VDTGaz1t3l81XJ62BD"></a></li> 
+            <li>Torpedos PunkAlternativo<a href="https://youtube.com/playlist?list=PLceQ-SyHl6rHFFQOPwRS7bWYMUPn75DVV"></a></li>
+            <!-- <li><a href="#"></a></li> -->
         </ul>
     </section>
 
     <section id="contact">
-        <h2>Contacto</h2>
+        <h2 id="h2-contact">Contacto</h2>
         <div class="contact-form">
             <h3>Agenda un turno</h3>
             <form action="email.php" method="POST">
