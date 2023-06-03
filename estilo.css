@@ -1,4 +1,9 @@
 /* Reset CSS */
+
+@media screen and (min-width: 100vw) {
+    
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +19,8 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     background-color: #000;
-    color: #fff;
-    background-image: url(betiafondo.jpg);
 }
 
 header {
@@ -37,16 +40,22 @@ header {
     align-items: center; 
     position: sticky;
     top: 0;
-}
+    background-color: #000;
+    margin: -10px -10px; 
+    box-shadow: #444 0 3px;
+} 
+ 
 
 #navbar ul {
     list-style-type: none;
     display: flex;
+    padding: 20px;
 }
 
 #navbar ul li {
-    margin-left: 50px;
+    margin-left: 30px;
     align-items: center;
+    font-size: 20px;
 }
 
 #navbar ul li a {
@@ -62,6 +71,26 @@ header {
 .img-logo--nav {
     width: 35px;
     height: 35px; 
+    margin-right: 30px;
+}
+
+#presentacion {
+    background-color: #111;
+    font-size: 17px;
+    text-align: center; 
+    color: #666; 
+}
+
+#guitarramarron {
+    background-color: #000;
+}
+
+#b-ar {
+    color: #666;
+}
+
+#b-oc {
+    color: #aaa;
 }
 
 section {
@@ -70,52 +99,69 @@ section {
 
 section #artist h2 {
     display: block;
-}  
+}   
 
 #banner {
+    margin-top: 25px; 
     color: #fff;
     font-size: 30px; 
     text-align: center;
-    padding-bottom: 80vh; 
+    padding-bottom: cal(80vh -500px); 
     transition: color .4s ease-in-out;
+    background-image: url(orange.jpg);
+    background-size: cover;
 }  
 
-#banner :hover {
+#psec {
+    font-size: 40px;
+}
+
+.img-logo--banner {
+    width: 500px; 
+} 
+
+#h2-pm {
+    display: inline-block;
     color: #f00;
+    margin: 50px;
+    padding: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 #h2-na { 
     position: absolute;
     display: flex;
-    margin-left: 43vw;
-    margin-top: 4vh;
+    margin-left: 40vw;
+    margin-top: -4vh;
     color: #f00;
 }
 
 #h2-catalog {
     position: absolute;
     display: flex;
-    margin-left: 40vw; 
+    margin-left: 37.5vw; 
     margin-top: -8vh;
     color: #f00;
 
 }
 
 #artists {
+    min-width: 700px;
     display: flex;
     background-color: #000;
     color: #f00;
 }
 
-.artist {
-    margin: 30px;
+.artist { 
+    margin: 100px 50px;
     border: 1px solid #f00;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
 
-.artist img {
+.artist img { 
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -129,21 +175,23 @@ section #artist h2 {
 
 #catalog ul {
     list-style-type: none;
-    padding: 0; 
+    padding: 0;   
 }
 
 #catalog ul li {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #f00;
-    padding-bottom: 5px;
+    margin : 20px 0;
+    border-top: 1px solid #f00;
+    padding-bottom: 5px; 
+    display: flex; 
+    text-align: start;
+    font-size: 25px;
 }
 
-#catalog ul li a {
-    margin: 100%vw;
-    padding: 30px; 
-    width: 20vw;
-    height: 30px; 
-    text-align: center;
+#catalog ul a { 
+    display: block;
+    padding: 20px;  
+    height: 30px;   
+    margin: 40px 30px;
 }
 
 #contact {
@@ -193,29 +241,71 @@ footer {
 }
  
 #check {
+    font-size: 50px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
     display: none;
 }
- 
-@media screen and (max-width: 700px) {
+
+}
+
+@media screen and(max-width: 700px) {
   /* Estilos específicos para pantallas pequeñas */
- * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
- }
+   
 
- nav { 
-    background-color: #f00;
-    height: 80px;
-    width: 100%; 
- } 
- .checklbl {
-    font-size: 30px;
+  .checkbtn {
+    display: block;
+    height: 3em;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #d50000;
+    top: 80px;
+    left: -110%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav { 
+    height: 5em;
+    width: 100vw;
+    background-color: #000;
+  }
+  
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px; 
+  }
+
+  nav ul li a {
+    font-size: 20px;
+
+  }
+
+  li a:hover, li a:active {
+    background: none;
     color: #000;
-    float: right;
+  }
 
- }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  
+  .artist {
+    display: block;
+    width: 20em;
+  }
+ 
+  .artist img {
 
+    width: 100%;
+  }
+  
 }
