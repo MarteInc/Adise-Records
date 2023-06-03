@@ -74,32 +74,9 @@ header {
     margin-right: 30px;
 }
 
-#presentacion {
-    background-color: #111;
-    font-size: 17px;
-    text-align: center; 
-    color: #666; 
-}
-
-#guitarramarron {
-    background-color: #000;
-}
-
-#b-ar {
-    color: #666;
-}
-
-#b-oc {
-    color: #aaa;
-}
-
 section {
     padding: 50px;
 }
-
-section #artist h2 {
-    display: block;
-}   
 
 #banner {
     margin-top: 25px; 
@@ -112,13 +89,65 @@ section #artist h2 {
     background-size: cover;
 }  
 
-#psec {
+#p-banner {
     font-size: 40px;
 }
 
 .img-logo--banner {
     width: 500px; 
 } 
+
+#presentacion {
+    background-color: #111;
+    font-size: 16px;
+    text-align: center; 
+    color: #666; 
+}
+
+#guitarrafondo {
+    background-color: #000;
+}
+
+#b-ar {
+    color: #666;
+}
+
+#b-negrita {
+    color: #aaa;
+}
+
+#h2-pm {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+#h3-pm {
+    color: #fff;
+    margin: 20px;
+    padding: 10px;
+    width: 350px;
+}
+
+#p-pm{
+    color: #fff;
+    margin: 20px;
+    padding:10px;
+    width: 350px;
+
+}
+
+#registro {
+    display: inline-block;
+    color: #fff;
+    margin: 50px;
+    padding: 30px;
+    width: 50vw; 
+}
+
+#p-registro {
+    margin: 10px;
+}
 
 #h2-pm {
     display: inline-block;
@@ -129,14 +158,6 @@ section #artist h2 {
     height: 20px;
 }
 
-#h2-na { 
-    position: absolute;
-    display: flex;
-    margin-left: 40vw;
-    margin-top: -4vh;
-    color: #f00;
-}
-
 #h2-catalog {
     position: absolute;
     display: flex;
@@ -144,28 +165,6 @@ section #artist h2 {
     margin-top: -8vh;
     color: #f00;
 
-}
-
-#artists {
-    min-width: 700px;
-    display: flex;
-    background-color: #000;
-    color: #f00;
-}
-
-.artist { 
-    margin: 100px 50px;
-    border: 1px solid #f00;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.artist img { 
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 #catalog {
@@ -192,6 +191,36 @@ section #artist h2 {
     padding: 20px;  
     height: 30px;   
     margin: 40px 30px;
+}
+
+#h2-na { 
+    position: absolute;
+    display: flex;
+    margin-left: 40vw;
+    margin-top: -4vh;
+    color: #f00;
+}
+
+#artists {
+    min-width: 700px;
+    display: flex;
+    background-color: #000;
+    color: #f00;
+}
+
+.artist { 
+    margin: 100px 50px;
+    border: 1px solid #f00;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.artist img { 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 #contact {
