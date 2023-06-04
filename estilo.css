@@ -270,12 +270,30 @@ section {
 
 #whatsapp {
     position: absolute; 
-    margin: -1px 120px; 
+    margin: -1px 50px; 
     padding: 8px 20px;
     text-decoration: none;
     background-color: #04852a;
     font-size: 17px;
     color: #fff;
+}
+
+#whatsapp:hover {
+    background-color: #006920;
+}
+
+#whatsapp-icon {
+    position: absolute; 
+    margin: -10px 250px; 
+    padding: 8px 20px;
+    width: 90px;
+    border-radius: 50%;
+    rotate: 10deg;
+    transition: all 1s;  
+} 
+
+#whatsapp-icon:hover {
+    transform: rotate(40deg);
 }
 
 footer {
