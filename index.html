@@ -10,11 +10,7 @@
 </head>
 <body class="body-container"> 
     <header>
-        <nav id="navbar">
-                <input type="checkbox" id="check"> 
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
+        <nav id="navbar"> 
             <ul>
                 <li><a href="#" onclick="scrollToSection('banner')">Inicio</a></li>
                 <li><a href="#artists" onclick="scrollToSection('artists')">Artistas</a></li>
@@ -189,8 +185,14 @@
                 <input type="text" name="nombre" placeholder="Nombre" required>
                 <input type="email" name="email" placeholder="Correo electrónico" required>
                 <input type="text" name="telefono" placeholder="Teléfono" required>
-                <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                <select id="selecionar">
+                    <option value="">Sello</option>
+                    <option value="">Sala</option>
+                    <option value="">Video</option>
+                </select>
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
                 <button type="submit">Enviar</button>
+                <a href="https://api.whatsapp.com/send?phone=541134173720" id="whatsapp">Envianos un mensaje</a>
             </form>
         </div>
     </section>
