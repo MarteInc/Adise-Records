@@ -79,13 +79,12 @@ section {
 }
 
 #banner {
-    margin-top: 25px; 
+    margin-top: 55px; 
     color: #fff;
     font-size: 30px; 
     text-align: center;
     padding-bottom: cal(80vh -500px); 
-    transition: color .4s ease-in-out;
-    background-image: url(orange.jpg);
+    transition: color .4s ease-in-out; 
     background-size: cover;
 }  
 
@@ -94,7 +93,7 @@ section {
 }
 
 .img-logo--banner {
-    width: 500px; 
+    width: 400px; 
 } 
 
 #presentacion {
@@ -114,6 +113,14 @@ section {
 
 #b-negrita {
     color: #aaa;
+}
+
+.div-pm { 
+    margin: 100px 50px;
+    border: 1px solid #f00;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #h2-pm {
@@ -164,7 +171,6 @@ section {
     margin-left: 37.5vw; 
     margin-top: -8vh;
     color: #f00;
-
 }
 
 #catalog {
@@ -172,25 +178,24 @@ section {
     color: #f00; 
 }
 
-#catalog ul {
-    list-style-type: none;
-    padding: 0;   
+#catalog ul { 
+    padding: 0;    
 }
 
 #catalog ul li {
     margin : 20px 0;
-    border-top: 1px solid #f00;
-    padding-bottom: 5px; 
-    display: flex; 
-    text-align: start;
-    font-size: 25px;
+    border-top: 1px solid #f00; 
+    display: flex;  
+    font-size: 20px;
+    padding: 0 40vw;  
 }
 
 #catalog ul a { 
-    display: block;
-    padding: 20px;  
-    height: 30px;   
-    margin: 40px 30px;
+    display: inline-block;
+    padding: 20px;   
+    margin: 10px 15px;
+    font-size: 15px;
+    text-decoration: none;
 }
 
 #h2-na { 
