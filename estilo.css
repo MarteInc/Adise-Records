@@ -65,8 +65,8 @@ header {
 }
 
 #navbar ul li a:hover { 
-    color: #666;
-    animation: glicht 2.3s infinite;
+    color: #f00;
+    animation: glicht 2.5s infinite;
 }
 
 .img-logo--nav {
@@ -106,12 +106,12 @@ section {
         -5px 2px, 
         #0d22da 0px 0px;
     }
-    35% {
+    40% {
         text-shadow: #f00
         0px 0px, 
         #0d22da 5px -2px;
     }
-    60% {
+    65% {
         text-shadow: #f00
         0px 0px, 
         #0d22da 0px 0px;
@@ -161,60 +161,83 @@ section {
     display: inline-block;
     margin: 10px; 
     font-size: 38px;
-}
+    color: #f00;
+    margin-left: 36vw;
+} 
 
 #h3-pm { 
     color: #fff;
     margin: 20px 0 0 0;
-    padding: 10px 50px; 
-    width: 50vw; 
+    padding: 30px 80px; 
+    width: 55vw; 
 }
 
-#p-pm{
-    position: absolute;
-    color: #fff;
-    margin: 100px 500px 0 0;
-    padding: 10px 100px;  
-    max-width: 50vw;
-    width: 50vw;
+#foto-pm {    
+    max-width: 40vw;    
+} 
 
-}
-
-#foto-pm {   
-    float: right; 
-    max-width: 500px;   
-    right: 0%;
+#p-pm{ 
+    position: absolute;  
+    right: 8vw;
+    color: #fff; 
+    max-width: 40vw;
+    margin: 150px 20px 0 0;
 }
 
 .div-pm-2 { 
     display: flex;
-    text-align: center; 
+    margin: -100px 50px 0;
     border: 1px solid #f00;
-    margin: 80px 50px; 
-    padding: 10px 90px; 
-    height: 270px;
-}
-
-#h3-pm-2 {
-    color: #fff;
-    margin: 20px 500px 0 200px;
-    padding: 10px 50px 0 50px; 
-    width: 50vw; 
+    padding: 10px; 
+    text-align: center;  
+    height: 100px;
 }
 
 #p-pm-2 {
-    display: flex;
-    position: absolute;
-    color: #fff;   
-    float: right; 
-    max-width: 30%;
-
+    color: #fff;
+    padding: 10px;
 }
 
-#foto-2-pm {
-    float: left;
-    max-width: 500px;
-    margin: 0;
+#section-pa div {
+    color: #fff;
+    display: flex;
+}
+
+#div-pa img {
+    display:contents;
+    width: 300px;
+}
+ 
+#h2-pa {
+    display: block;
+    color: #f00;
+    margin: -100px 0 0 36%;
+    padding: 100px 0;
+    font-size: 38px;
+}
+
+#div-pa { 
+    color: #fff;
+    border: 1px solid #d50000; 
+    margin: 50px;
+    padding: 50px;
+    width: 30%;
+}
+
+#div-pa-2 { 
+    color: #fff;
+    border: 1px solid #d50000;
+    margin: 50px;
+    padding: 50px;
+    width: 30%;
+}
+
+#div-pa-3 { 
+    color: #fff;
+    border: 1px solid #d50000;
+    margin: 50px;
+    padding: 50px;
+    width: 30%;
 }
 
 #serviyregistro h2 {
@@ -240,49 +263,6 @@ section {
     padding: 10px;  
     border: 2px solid #d50000;
     font-size: 20px;
-}
- 
-
-#h2-pm { 
-    color: #f00;
-    margin-left: 36vw;
-}
-
-#section-pa div {
-    color: #fff;
-    display: flex;
-}
- 
-#h2-pa {
-    display: block;
-    color: #f00;
-    margin: 0 0 0 36%;
-    padding: 100px 0;
-    font-size: 38px;
-}
-
-#div-pa { 
-    color: #fff;
-    border: 1px solid #d50000;
-    margin: 50px;
-    padding: 50px;
-    width: 30%;
-}
-
-#div-pa-2 { 
-    color: #fff;
-    border: 1px solid #d50000;
-    margin: 50px;
-    padding: 50px;
-    width: 30%;
-}
-
-#div-pa-3 { 
-    color: #fff;
-    border: 1px solid #d50000;
-    margin: 50px;
-    padding: 50px;
-    width: 30%;
 }
 
 #h2-catalog {
@@ -403,9 +383,15 @@ h4 {
     margin: -10px 230px; 
     padding: 8px 20px;
     width: 90px;
-    border-radius: 50%;
-    rotate: 10deg; 
+    border-radius: 50%; 
+    transition: 1s all;
 }  
+
+
+#whatsapp-icon:hover {
+    rotate: 40deg;
+}
+
 
 footer {
     background-color: #000;
@@ -806,6 +792,5 @@ footer {
         padding: 10px;
         text-align: center;
     }
- 
     
 }
