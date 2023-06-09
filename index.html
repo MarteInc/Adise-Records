@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.D.I.S.E. Records</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css"> 
     <link rel="shortcut icon" href="adiselogo.png">
 </head>
 <body class="body-container"> 
     <header>
-        <nav id="navbar"> 
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav id="navbar" class="navbar"> 
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#catalog">Catálogo</a></li>
-                <li><a href="#artists">Artistas</a></li>
+                <li><a href="#section-pm">Producc. Musical</a></li>
+                <li><a href="#section-pa">Producc. Audiovisual</a></li>
+                <li><a href="#serviyregistro">Servisios</a></li>
+                <li><a href="#catalog">Catalogo</a></li>
                 <li><a href="#footer">Contacto</a></li>
             </ul>
             <img src="adiselogo.png" class="img-logo--nav"> 
         </nav> 
     </header>
+
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function () {
+            narbar = document.querySelector(".navbar")
+            navbar.classList.toggle(".active")
+        } 
+    </script>
 
     <section id="banner" >
         <h1 id="h1">Bienvenido a A.D.I.S.E.<b class="p-estrella">&#9734;</b>Records</h1>
@@ -67,14 +81,14 @@
     <section id="section-pm">
         <h2 id="h2-pm">Producción Musical</h2>
         <div class="div-pm">
-            <img src="" alt="">
             <h3 id="h3-pm">¿Producción Musical?</h3>
             <p id="p-pm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <img src="aurisfondojpg.jpg" alt="" id="foto-pm">
         </div>  
         <div class="div-pm-2">
-            <img src="" alt="">
+            <img src="midigrande.jpg" alt="" id="foto-2-pm">
             <h3 id="h3-pm-2">¿Producción Musical?</h3>
             <p id="p-pm-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -82,54 +96,85 @@
         </div>
     </section>
 
-    <section id="registro">
-        <h2 id="h2-registro">Servicios de registros y patentamientos:</h2>
-        </br>
-        <p id="p-registro">INPI: Registro de Patente “Marca” más Logotipo en INPI.</br>
-        </br>
-        TRANSCRIPCION DE PARTITURAS: para registros de “Derecho de autor” en</br>
-        DNDA / SADAIC / PUBLISHING EDITORIAL.</br>
-        </br> 
-        NOTA: para el registro de “Letra y Música”, no incluye el copiado y tipiado de las</br>
-        “Letras”. En caso de hacerlo nosotros tiene un costo adicional por cada</br>
-        canción.</br>
-        </br>
-        DNDA: Registro e inscripción de “Obra inédita” (Letra y/o Música). Con la opción de</br>
-        registrar de 2 y hasta 15 canciones en un solo tramite como “Obra Integral”.</br>
-        </br>
-        SADAIC: Registro de 1 (una) canción “Letra y/o Música” (Autor y Compositor).</br>
-        Presentación e inscripción del “Boletín de declaración”.</br>
-        </br>
-        SADAIC: Registro de varias canciones “Letra y/o Música” (Autor y Compositor).</br>
-        Presentación e inscripción de los “Boletines de declaración” con la opción de registrar</br>
-        desde 5 y hasta 15 canciones en un solo tramite como “Obra Integral”.</br>
-        </br>
-        DNDA + SADAIC: (1 canción) Registro de una canción “Letra y/o Música” (Autor y</br>
-        Compositor), con la combinación de los dos trámites juntos. (“Obra inédita”+ “Boletín</br>
-        de declaración”)</br>
-        </br>
-        DNDA + SADAIC: (varias canciones “hasta 15”) Registro de varias canciones “Letra</br>
-        y/o Música” (Autor y Compositor), con la combinación de los dos trámites juntos.</br>
-        Presentación e inscripción de los “Boletines de declaración” con la opción de registrar</br>
-        desde 5 y hasta 15 canciones en un solo tramite como “Obra Integral”.</p></br>
+    <section id="section-pa">
+        <h2 id="h2-pa">Producción Audiovisual</h2>
+        <div>
+        <div id="div-pa">
+            <h3 id="h3-pa"></h3>
+            <img>
+            <p id="p-pa">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatum animi, ipsa excepturi pariatur culpa illo amet architecto dolore saepe unde ipsam est autem aliquid! Perspiciatis in ipsum voluptates cum.
+            </p>
+        </div>
+        <div id="div-pa-2">
+            <h3 id="h3-pa-2"></h3>
+            <img>
+            <p id="p-pa-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatum animi, ipsa excepturi pariatur culpa illo amet architecto dolore saepe unde ipsam est autem aliquid! Perspiciatis in ipsum voluptates cum.
+            </p>
+        </div>
+        <div id="div-pa-3">
+            <h3 id="h3-pa-3"></h3>
+            <img>
+            <p id="p-pa-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos voluptatum animi, ipsa excepturi pariatur culpa illo amet architecto dolore saepe unde ipsam est autem aliquid! Perspiciatis in ipsum voluptates cum.
+            </p>
+        </div>
+        </div>
     </section>
 
-
+    <section id="serviyregistro">
+        <h2 id="h2-registro">Servicios de registros y patentamientos:</h2>
+        <div id="container-serviyregistro">
+            <div>
+                <p id="p-registro">INPI: Registro de Patente “Marca” más Logotipo en INPI.</p>
+            </div>  
+            <div>
+                <p id="p-registro">TRANSCRIPCION DE PARTITURAS: para registros de “Derecho de autor” en
+                DNDA / SADAIC / PUBLISHING EDITORIAL.</p>
+            </div>
+            <div>
+                <p id="p-registro">NOTA: para el registro de “Letra y Música”, no incluye el copiado y tipiado de las 
+                “Letras”. En caso de hacerlo nosotros tiene un costo adicional por cada 
+                canción.</p> 
+            </div>
+            <div>
+                <p id="p-registro">DNDA: Registro e inscripción de “Obra inédita” (Letra y/o Música). Con la opción de 
+                registrar de 2 y hasta 15 canciones en un solo tramite como “Obra Integral”.</p> 
+            </div>
+            <div>
+                <p id="p-registro">SADAIC: Registro de 1 (una) canción “Letra y/o Música” (Autor y Compositor).  
+                Presentación e inscripción del “Boletín de declaración”.</p> 
+            </div>
+            <div>
+               <p id="p-registro">SADAIC: Registro de varias canciones “Letra y/o Música” (Autor y Compositor). 
+               Presentación e inscripción de los “Boletines de declaración” con la opción de registrar 
+               desde 5 y hasta 15 canciones en un solo tramite como “Obra Integral”.</p> 
+            </div>
+            <div>
+              <p id="p-registro">DNDA + SADAIC: (1 canción) Registro de una canción “Letra y/o Música” (Autor y 
+               Compositor), con la combinación de los dos trámites juntos. (“Obra inédita”+ “Boletín 
+               de declaración”)</p> 
+            </div>
+            <div>
+                <p id="p-registro">DNDA + SADAIC: (varias canciones “hasta 15”) Registro de varias canciones “Letra 
+                y/o Música” (Autor y Compositor), con la combinación de los dos trámites juntos. 
+                Presentación e inscripción de los “Boletines de declaración” con la opción de registrar 
+                desde 5 y hasta 15 canciones en un solo tramite como “Obra Integral”.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="catalog">
         <h2 id="h2-catalog">Nuestro Catálogo</h2>
         <ul>
-            <li>Augusto Sestini</li>
-                <img src="">
+            <li><img src="augustoperfil.jpg">Augusto Sestini</li>
                 <a href="https://youtu.be/WN8z8s25nls" target="_blank">Un Niño</a>
-            <li>Cami Islas</li>
-                <img src="">
+            <li><img src="camiislas.jpg">Cami Islas</li>
                 <a href="https://youtu.be/SYyzHjd6vrQ" target="_blank">Basta para Mi</a>
-            <li>Elvis Dixilan</li>
-                <img src="">
+            <li><img src="elvisdixilan.webp">Elvis Dixilan</li>
                 <a href="https://youtu.be/XGsoU3U6yM8" target="_blank">Mujer Fatal</a>
-            <li>Gabriel Leiva Grupo</li> 
-                <img src="">
+            <li><img src="glgperfil.jpg">Gabriel Leiva Grupo</li> 
                 <a href="https://youtu.be/8Q8dvwJTeIc" target="_blank">Atardecer, Telarañas, Boedo - Yo Nací Para Esto (Live Streaming)</a>
                 <a href="https://youtu.be/-CCovahD_5U" target="_blank">Yo Nací Para Esto - Yo Nací Para Esto</a>
                 <a href="https://youtu.be/EzBanFOlvL8" target="_blank">La Favio, Latidos - Yo Nací Para Esto</a>
@@ -137,33 +182,26 @@
                 <a href="https://youtu.be/Mt9B-Z5fVcg" target="_blank">Tilcara - Tilcara "Lado A"</a>
                 <a href="https://youtu.be/G9aUmcfF7dc" target="_blank">Paz - Tilcara "Lado A"</a>
                 <a href="https://youtu.be/8OROIMvr89k" target="_blank">Tu Voz - Tilcara "Lado A"</a>
-            <li>Gabriel Lemos</li>
-                <img src="">
+            <li><img src="gabilemon.jpg">Gabriel Lemos</li>
                 <a href="https://youtu.be/TNJBetZLGZY" target="_blank">Fría Como El Hielo</a>
-            <li>Los Nadal</li>
-                <img src="">
+            <li><img src="losnadal.jpg">Los Nadal</li>
                 <a href="https://youtu.be/fv0mXCCPj5A" target="_blank">A los Tobas</a>
                 <a href="https://youtu.be/gVnW-FPkbto" target="_blank">Soy De Aquí, Soy De Allá</a>
                 <a href="https://youtu.be/kH-wNzfIVr0" target="_blank">Soy De Aquí, Soy De Allá 2</a>
                 <a href="https://youtu.be/fhC_K25qjQ4" target="_blank">La Algarrobera</a> 
-            <li>Luciano Sposari</li>
-                <img src="">
+            <li><img src="lucianosposari.jpg">Luciano Sposari</li>
                 <a href="https://youtu.be/FJkIm0dqyuQ" target="_blank">La Angustia De Las Nueve Y Veinte</a>
                 <a href="https://youtu.be/WgOFao7RkRk" target="_blank">La Angustia De Las Nueve Y Veinte - "Version desde casa"</a>
                 <a href="https://youtu.be/hAMydjmU2xY" target="_blank">Danza Cruel</a>
                 <a href="https://youtu.be/bme2lKTYDTA" target="_blank">Alfileres</a> 
-            <li>Maru Fedele</li>
-                <img src="">
+            <li><img src="marufedeleperfil.jpg">Maru Fedele</li>
                 <a href="https://youtube.com/playlist?list=OLAK5uy_k0KF0h_Cl2Yn4KTXAPlm1mfuTDUkfEsEM" target="_blank">Amarás</a>
                 <a href="https://youtube.com/playlist?list=OLAK5uy_kf-miSh74ZT3n-xZosQE0ldI3Cnd4t_64" target="_blank">Cuenta</a>  
-            <li>Nunca Será</li>
-                <img src="">
+            <li><img src="nuncasera.jpg">Nunca Será</li>
                 <a href="https://youtu.be/U6MXxvUap0o" target="_blank">Sin Retorno</a>
-            <li>P2</li>
-                <img src="">
+            <li><img src="p2.jpg">P2</li>
                 <a href="https://youtube.com/playlist?list=PLWhMLcSqvsp1OS9VDTGaz1t3l81XJ62BD" target="_blank">PlayList</a>
-            <li>TorP2</li> 
-                <img src="">
+            <li><img src="torp2perfil.jpg">TorP2</li> 
                 <a href="https://youtube.com/playlist?list=PLceQ-SyHl6rHFFQOPwRS7bWYMUPn75DVV" target="_blank">PlayList</a>
             <!-- <li><a href="#"></a></li> -->
         </ul>
