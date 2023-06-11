@@ -220,8 +220,7 @@ section {
     display: flex;
 }
 
-#div-pa img {
-    display:contents;
+#div-pa img { 
     width: 300px;
 }
  
@@ -420,16 +419,15 @@ footer {
 
 
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px){ 
  
     * {
-        max-width: 100vw;
+        max-width: 100%;
     }
   body {
     font-size: 1rem;
-  }
-  
-  /* Cambiar el tamaño del logotipo de navegación en dispositivos móviles */
+  } 
+ 
   .img-logo--nav {
     display: none;
   }
@@ -511,24 +509,80 @@ footer {
     width: 100%;
     height: auto;
   }
-  
-  /* Ajustar el tamaño de fuente para dispositivos móviles en la sección de producción musical */
-  #h2-pm,
-  #h3-pm,
-  #p-pm,
-  #p-pm-2 {
-    font-size: .7rem;
+
+  .div-pm {   
+    flex-wrap: nowrap;
+      border: 1px solid #f00; 
+      width: 100%;
   }
   
-  /* Ajustar el tamaño de fuente para dispositivos móviles en la sección de producción audiovisual */
-  #h2-pa,
-  #h3-pa,
-  #p-pa,
-  #h3-pa-2,
-  #p-pa-2,
-  #h3-pa-3,
-  #p-pa-3 {
-    font-size: .7rem;
+  #h2-pm { 
+     position: relative;
+     font-size: 1rem;
+  } 
+  
+  #h3-pm { 
+    display: none;
+  }
+  
+  #foto-pm {    
+      max-width: 40vw;    
+  } 
+  
+  #p-pm{   
+      font-size: .5rem;
+  }
+  
+  .div-pm-2 {  
+    font-size: .5rem;
+    width: 100%;
+  }
+  
+  #p-pm-2 { 
+    font-size: .5rem;
+  }  
+
+  #section-pa div {
+      color: #fff; 
+      display: block;
+  }
+  
+  #div-pa img { 
+      width: 300px;
+  }
+   
+  #h2-pa {
+      display: block;
+      color: #f00; 
+      font-size: 1rem;
+      width: auto;
+  }
+  
+  #div-pa { 
+      color: #fff;
+      border: 1px solid #d50000; 
+      margin: .5rem;
+      padding: .5rem;
+      width: 100%;
+      font-size: .8rem;
+  }
+  
+  #div-pa-2 { 
+      color: #fff;
+      border: 1px solid #d50000;
+      margin: .5rem;
+      padding: .5rem;
+      width: 100%;
+      font-size: .8rem;
+  }
+  
+  #div-pa-3 { 
+      color: #fff;
+      border: 1px solid #d50000;
+      margin: .5rem;
+      padding: .5rem;
+      width: 100%;
+      font-size: .8rem;
   }
   
   /* Ajustar el tamaño de fuente para dispositivos móviles en la sección de servicios y registros */
@@ -553,8 +607,9 @@ footer {
     display: none;
   }
 
-  #footer {
-    display: none;
+  #footer { 
+    width: 100%;
+    height: 2rem;
   }
   
     
