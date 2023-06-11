@@ -140,13 +140,40 @@ section {
 #div-se {
     display: flex;
     flex-wrap: wrap;
-}
+} 
 
-#div-se img {
-    margin: 2.3rem;
-    width: 25rem;  
-    width: 45%;
+
+.slider{
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
 }
+.slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 50vw;
+    list-style: none;
+}
+.slider img{
+    object-fit: cover;
+    margin: 5% 15%; 
+    width: 35rem;
+    height: 35rem;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    10%{margin-left: 0;}
+    
+    25%{margin-left: -50%;}
+    50%{margin-left: -50%;}
+    
+    75%{margin-left: -100%;}
+    100%{margin-left: -100%;} 
+} 
+
 
 #div-se p {
     display: block;
@@ -154,7 +181,7 @@ section {
 
 #div-se p {
     color: #fff;
-    height: 500px;
+    height: 100px;
     width: 100%;
 }
 
@@ -175,7 +202,6 @@ section {
 }
 
 #h2-pm { 
-    display: inline-block;
     margin: 10px; 
     font-size: 38px;
     color: #f00;
@@ -190,7 +216,7 @@ section {
 }
 
 #foto-pm {    
-    max-width: 40vw;    
+    max-width: 50%;    
 } 
 
 #p-pm{ 
@@ -203,16 +229,15 @@ section {
 
 .div-pm-2 { 
     display: flex;
-    margin: -100px 50px 0;
-    border: 1px solid #f00;
-    padding: 10px; 
-    text-align: center;  
-    height: 100px;
+    margin: -3rem 50px 0;
+    border: 1px solid #f00;  
+    height: 10rem;
 }
 
 #p-pm-2 {
     color: #fff;
-    padding: 10px;
+    padding: 1.7rem;
+    text-align: center;  
 }
 
 #section-pa div {
@@ -323,8 +348,7 @@ section {
     color: #f00; 
 }
 
-#h4-container {
-    position: absolute;
+#h4-container { 
     color: #fff;
     margin: 10px 10px;
 }
@@ -339,54 +363,14 @@ h4 {
     max-width: 400px;
     margin: 0 auto;
     padding-left: 20px;
-}
+}  
 
-.contact-form h3 {
-    margin-bottom: 10px;
-}
-
-#selecionar {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.contact-form form textarea {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
-    padding: 5px;
-    min-width: 380px;
-    max-width: 380px;
-    min-height: 50px;
-    max-height: 100px;
-}
-
-.contact-form form button {
-    padding: 10px 20px;
-    background-color: #f00;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form form input, .contact-form form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.contact-form form button:hover {
-    background-color: #d50000;
-}
-
-#whatsapp {
-    position: absolute; 
-    margin: -1px 30px; 
+#whatsapp { 
+    margin: 0 30px; 
     padding: 8px 20px;
     text-decoration: none;
     background-color: #04852a;
-    font-size: 17px;
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -394,10 +378,7 @@ h4 {
     background-color: #006920;
 }
 
-#whatsapp-icon {
-    position: absolute; 
-    margin: -10px 230px; 
-    padding: 8px 20px;
+#whatsapp-icon {  
     width: 90px;
     border-radius: 50%; 
     transition: 1s all;
@@ -414,6 +395,7 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+    margin-bottom: -10px;
 }
 
 
@@ -424,9 +406,7 @@ footer {
     * {
         max-width: 100%;
     }
-  body {
-    font-size: 1rem;
-  } 
+     
  
   .img-logo--nav {
     display: none;
@@ -510,15 +490,19 @@ footer {
     height: auto;
   }
 
-  .div-pm {   
-    flex-wrap: nowrap;
-      border: 1px solid #f00; 
-      width: 100%;
+  #section-pm {
+    margin: 0;
+    padding: 0;
+  }
+
+  .div-pm {    
+      width: 80%;
   }
   
-  #h2-pm { 
-     position: relative;
+  #h2-pm {  
+    position: absolute;
      font-size: 1rem;
+     margin-top: -20rem;
   } 
   
   #h3-pm { 
@@ -526,20 +510,21 @@ footer {
   }
   
   #foto-pm {    
-      max-width: 40vw;    
+    width: 20rem;    
   } 
   
   #p-pm{   
-      font-size: .5rem;
+    display: none;
   }
   
   .div-pm-2 {  
-    font-size: .5rem;
-    width: 100%;
+    margin: 0;
+    font-size: .8rem;
+    width: 80%;
   }
   
   #p-pm-2 { 
-    font-size: .5rem;
+    font-size: .8rem;
   }  
 
   #section-pa div {
