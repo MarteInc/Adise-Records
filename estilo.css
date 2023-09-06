@@ -7,6 +7,18 @@
  html {
      scroll-behavior: smooth;
  }
+ 
+ html::-webkit-scrollbar {
+    color: #d50000;
+    width: 0.5rem;
+    background: #000000cb;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #d50000;
+    border-radius: 30px;
+    margin-right: -0.7rem;
+}
 
  .p-estrella {
      color: #ffd700;
@@ -389,19 +401,19 @@
  }
 
  #h2-contact {
-    position: absolute;
-    margin: 1rem 0 0 54rem;
-    font-size: 3rem;
+     position: absolute;
+     margin: 1rem 0 0 54rem;
+     font-size: 3rem;
  }
 
  .ggmaps {
-    margin: 0 0 0 2rem;
-    padding: 3px;
-    border: 3px solid #d50000;
+     margin: 0 0 0 2rem;
+     padding: 3px;
+     border: 3px solid #d50000;
  }
 
  #h4-container {
-    position: absolute;
+     position: absolute;
      color: #fff;
      margin: -20rem 0 10px 50rem;
  }
@@ -413,7 +425,7 @@
  }
 
  .contact-form {
-     max-width: 100px; 
+     max-width: 100px;
      padding-left: 20px;
  }
 
@@ -432,8 +444,8 @@
  }
 
  #whatsapp-icon {
-    position: absolute;
-    margin: -.5rem 0 0 55rem;
+     position: absolute;
+     margin: -.5rem 0 0 55rem;
      width: 67px;
      border-radius: 50%;
      transition: 1s all;
