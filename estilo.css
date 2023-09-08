@@ -465,6 +465,24 @@ html::-webkit-scrollbar-thumb {
      margin-bottom: -10px;
  }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  @media only screen and (max-width: 700px) {
     * { 
         max-width: 100%;
@@ -719,12 +737,12 @@ html::-webkit-scrollbar-thumb {
     }
 
     #whatsapp {
-        margin: 0;
-        
+        margin: -2.5rem 0 0 -2rem;
+        font-size: .8rem;
     }
 
     #whatsapp-icon {
-        margin: 0;
+        display: none;
     }
 
     #footer {
