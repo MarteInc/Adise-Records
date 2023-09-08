@@ -718,10 +718,10 @@ html::-webkit-scrollbar-thumb {
         left: 1.5rem;
     }
 
-    .ggmaps {
-        margin: 0 0 1rem 13rem;
-        width: 12rem;
-        height: 12rem;
+    .ggmaps { 
+        margin: 0 0 1rem 11rem;
+        width: 10rem;
+        height: 10rem;
     }
 
     #h2-contact {
@@ -731,7 +731,7 @@ html::-webkit-scrollbar-thumb {
     }
 
     #h4-container {
-        margin: -9rem 0 0 -2.5rem;
+        margin: -7rem 0 0 -3.5rem;
         font-size: .8rem;
     }
 
@@ -741,7 +741,7 @@ html::-webkit-scrollbar-thumb {
     }
 
     #whatsapp {
-        margin: -2.5rem 0 0 -2rem;
+        margin: -.5rem 0 0 -3rem;
         font-size: .8rem;
     }
 
