@@ -531,7 +531,7 @@ html::-webkit-scrollbar-thumb {
 
     /* Alinear el texto del banner en dispositivos móviles */
     #h1 {
-        margin: auto;
+        margin: 4rem auto 0;
         font-size: 1.7rem;  
     }
 
@@ -541,13 +541,13 @@ html::-webkit-scrollbar-thumb {
 
     #p-banner {
         font-size: 1rem; 
-        margin-bottom: 100vh; 
+        margin-bottom: 110vh; 
     }
 
     #banner img { 
         position: absolute; 
         width: 25rem;
-        margin: -84vh 0 0 -11.5rem;
+        margin: -80vh 0 0 -11.5rem;
     }
 
     .slider {
