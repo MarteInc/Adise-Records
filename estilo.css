@@ -556,7 +556,7 @@ html::-webkit-scrollbar-thumb {
 
     #bata_movile {  
         display: flex; 
-        margin: 1rem;
+        margin: 2.5rem 2.5rem -1rem 2.5rem;
     }
 
     /* Alinear el texto de presentación en dispositivos móviles */
@@ -566,9 +566,13 @@ html::-webkit-scrollbar-thumb {
         font-size: 0.9rem; /* Ajusta el tamaño de fuente */
     }
 
+    #section-se {
+        padding: 0%;
+    }
+
     #div-se p {
         font-size: .8rem; /* Ajusta el tamaño de fuente */
-        margin: 1rem -2rem 2rem 0;
+        margin: 1rem 2.5rem 9rem 2.5rem; 
     }
 
     #section-pm {
@@ -597,24 +601,26 @@ html::-webkit-scrollbar-thumb {
     }
 
     #p-pm {
-        display: none;
-        margin: 0 auto;
-        font-size: 1rem; /* Ajusta el tamaño de fuente */
+        display: none; 
     }
 
     .div-pm-2 {
         margin: 1rem;
-        padding-bottom: 15rem;
+        padding-bottom: 13rem;
     }
 
     #p-pm-2 {
-        font-size: 1rem; /* Ajusta el tamaño de fuente */
+        font-size: .8rem; /* Ajusta el tamaño de fuente */
     } 
+
+    #section-pa {
+        margin-top: -3rem;
+    }
 
     #section-pa div {
         color: #fff;
         display: block;  
-        margin: 0 ;
+        margin: 0;
     }
 
     #div-pa img { 
@@ -627,12 +633,32 @@ html::-webkit-scrollbar-thumb {
         color: #f00;
         font-size: 1.8rem;
         text-align: center; /* Alinea el texto al centro */
+    } 
+
+    #h3-pa,
+    #h3-pa-2,
+    #h3-pa-3 {
+        display: none;
     }
 
+    #div-pa p {
+        margin: 20rem 5rem 0 -24rem;
+        width: auto;
+    }
+    #div-pa-2 p {
+        margin: 20rem 5rem 0 -24rem;
+        width: auto;
+    }
+    #div-pa-3 p {
+        margin: 20rem 5rem 0 -24rem;
+        width: auto;
+    }
+    
     #p-pa,
     #p-pa-2,
-    #p-pa-3 {
-        position: absolute;
+    #p-pa-3 {    
+        font-size: .8rem;
+        display: inline;
     }
 
     #div-pa,
@@ -641,34 +667,60 @@ html::-webkit-scrollbar-thumb {
         width: auto;
         color: #fff;
         border: 1px solid #d50000;
-        margin: 0.5rem;
-        padding: 0.5rem;
+        margin: 0;
+        padding: 0;
         font-size: 0.8rem; /* Ajusta el tamaño de fuente */
     } 
 
-    /* Ajustar el tamaño de fuente para dispositivos móviles en el catálogo */
-    #h2-catalog,
-    #catalog ul li {
-        font-size: 14px; /* Ajusta el tamaño de fuente */
+    #div-pa-2 img {
+        margin-top: 1rem;
+        margin-bottom: 10rem;
     }
 
-    #catalog img {
-        position: relative;
-        width: 4rem;
-        left: auto;
+    #serviyregistro h2 {
+        font-size: 1.8rem;
+    } 
+
+    /* Ajustar el tamaño de fuente para dispositivos móviles en el catálogo */
+    #h2-catalog {
+        font-size: 1.8rem;
+        margin: 1rem 5rem -1.5rem;
+    }
+    #catalog ul li {
+        font-size: .8rem; /* Ajusta el tamaño de fuente */
+    }
+
+    #catalog ul li img {  
+        position: absolute;
+        width: 2.5rem;
+        left: 1.5rem;
+    }
+
+    .ggmaps {
+        margin: 0 0 1rem 13rem;
+        width: 15rem;
+        height: 15rem;
     }
 
     #h2-contact {
-        margin: 0;
+        margin: 0 0 0 -2rem;
         display: block; 
+        font-size: 1.8rem;
     }
 
     #h4-container {
-        margin: 0;
+        margin: -12rem 0 0 -2.5rem;
+        font-size: .8rem;
+    }
+
+    #h4-container h4 {
+        margin: -2rem 0 0 0;
+        font-size: .8rem;
     }
 
     #whatsapp {
         margin: 0;
+        
     }
 
     #whatsapp-icon {
@@ -676,7 +728,7 @@ html::-webkit-scrollbar-thumb {
     }
 
     #footer {
-        width: 100%;
-        height: 20rem;
+        width: 100%; 
+        bottom: -1rem;
     }
 }
