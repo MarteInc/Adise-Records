@@ -559,13 +559,13 @@ html::-webkit-scrollbar-thumb {
 
     #p-banner {
         font-size: 1rem; 
-        margin-bottom: 60vh; 
+        margin-bottom: 80vh; 
     }
 
     #banner img { 
         position: absolute; 
         width: 25rem;
-        margin: -20vh 0 0 -11.5rem;
+        margin: -50vh 0 0 -11.5rem;
     }
 
     .slider {
