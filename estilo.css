@@ -279,7 +279,7 @@ html::-webkit-scrollbar-thumb {
  #div-pa p {
      position: absolute;
      width: 25%;
-     margin: 19rem 1rem 1rem 1rem;
+     margin: 13rem 1rem 1rem 1rem;
      text-align: center;
  }
 
@@ -293,7 +293,7 @@ html::-webkit-scrollbar-thumb {
  #div-pa-3 p {
      position: absolute;
      width: 25%;
-     margin: 19rem 1rem 1rem 1rem;
+     margin: 14rem 1rem 1rem 1rem;
      text-align: center;
  }
 
@@ -301,7 +301,8 @@ html::-webkit-scrollbar-thumb {
      color: #fff;
      border: 1px solid #d50000;
      margin: 25px;
-     width: 30%;
+     width: 30%; 
+     height: 28rem;
  }
 
  #div-pa-2 {
@@ -320,16 +321,19 @@ html::-webkit-scrollbar-thumb {
 
  #div-pa img {
      width: 90%;
+     height: 11rem;
      margin: 1rem 1rem 10rem 1rem;
  }
 
  #div-pa-2 img {
      width: 90%;
-     margin: 10rem 1rem 1rem 1rem;
+     height: 11rem;
+     margin: 15rem 1rem 1rem 1rem;
  }
 
  #div-pa-3 img {
      width: 90%;
+     height: 10rem;
      margin: 1rem 1rem 10rem 1rem;
  }
 
@@ -624,7 +628,7 @@ html::-webkit-scrollbar-thumb {
 
     .div-pm-2 {
         margin: 1rem;
-        padding-bottom: 13rem;
+        padding-bottom: 14rem;
     }
 
     #p-pm-2 {
@@ -660,15 +664,15 @@ html::-webkit-scrollbar-thumb {
     }
 
     #div-pa p {
-        margin: 20rem 5rem 0 -24rem;
+        margin: 17.5rem 5rem 0 -21.5rem;
         width: auto;
     }
     #div-pa-2 p {
-        margin: 20rem 5rem 0 -24rem;
+        margin: 16rem 5rem 0 -21.5rem;
         width: auto;
     }
     #div-pa-3 p {
-        margin: 20rem 5rem 0 -24rem;
+        margin: 15.5rem 5rem 0 -21.5rem;
         width: auto;
     }
     
@@ -716,8 +720,8 @@ html::-webkit-scrollbar-thumb {
 
     .ggmaps {
         margin: 0 0 1rem 13rem;
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
     }
 
     #h2-contact {
@@ -727,12 +731,12 @@ html::-webkit-scrollbar-thumb {
     }
 
     #h4-container {
-        margin: -12rem 0 0 -2.5rem;
+        margin: -9rem 0 0 -2.5rem;
         font-size: .8rem;
     }
 
     #h4-container h4 {
-        margin: -2rem 0 0 0;
+        margin: -2.5rem 0 0 0;
         font-size: .8rem;
     }
 
